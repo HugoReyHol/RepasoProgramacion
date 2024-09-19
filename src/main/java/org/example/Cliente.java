@@ -37,4 +37,11 @@ public abstract class Cliente {
     public void setDescuento(float descuento) {
         this.descuento = descuento;
     }
+
+    @Override
+    public String toString() {
+        return "identificador: '" + identificador + '\'' +
+               ", contrasena: '" + contrasena + '\'' +
+               ", descuento: '" + descuento + '\'';
+    }
 }

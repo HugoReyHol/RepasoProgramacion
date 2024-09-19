@@ -18,4 +18,10 @@ public class Usuario extends Cliente {
     public void setPremium(boolean premium) {
         this.premium = premium;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", premium: '" + premium + '\'';
+    }
 }
